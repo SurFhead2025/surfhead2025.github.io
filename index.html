@@ -229,25 +229,25 @@
     <h2 class="title is-3">Abstract</h2>
       </center>
         <div class="content has-text-justified">
-          Recent studies leveraging Gaussian primitives have made substantial progress in
-          high-fidelity head avatar rendering. However, they still struggle with accurately
-          capturing intricate geometric details and rendering unseen poses of human heads
-          due to their reliance on coarse similarity transformations. Precise head geometry is
-          vital for applications such as mesh reconstruction and relighting, while modeling
-          complex geometric deformations is equally crucial for pose extrapolation. Despite
-          this, these aspects have received limited attention within the Gaussian framework.
-          In response, we propose SurFhead, a novel method that reconstructs dynamic
-          head geometry from RGB videos using 2D Gaussian surfels. To ensure high-
-          fidelity rendering for both normals and images, especially in extreme pose sce-
-          narios, we draw inspiration from classical mesh-based deformation transfer and
-          affine transformation interpolation. Our approach introduces precise geometric
-          deformation and blends surfels through polar decomposition of transformations,
-          including those affecting normals. Unlike previous avatar methods based on radi-
-          ance fields or meshes, SurFhead enables efficient reconstruction driven by Gaus-
-          sian primitives while preserving high-fidelity geometry. Our key contribution lies
-          in bridging classical graphics techniques, such as mesh-based deformation, with
-          modern Gaussian primitives, achieving state-of-the-art geometry reconstruction
-          and rendering quality.
+          Recent advancements in head avatar rendering using Gaussian primitives have
+	achieved significantly high-fidelity results. Although precise head geometry is
+	crucial for applications like mesh reconstruction and relighting, current meth-
+	ods struggle to capture intricate geometric details and render unseen poses due
+	to their reliance on similarity transformations, which cannot handle stretch and
+	shear transforms essential for detailed deformations of geometry. To address this,
+	we propose SurFhead, a novel method that reconstructs riggable head geometry
+	from RGB videos using 2D Gaussian surfels, which offer well-defined geometric
+	properties, such as precise depth from fixed ray intersections and normals derived
+	from their surface orientation, making them advantageous over 3D counterparts.
+	SurFhead ensures high-fidelity rendering of both normals and images, even in ex-
+	treme poses, by leveraging classical mesh-based deformation transfer and affine
+	transformation interpolation. SurFhead introduces precise geometric deforma-
+	tion and blends surfels through polar decomposition of transformations, including
+	those affecting normals. Our key contribution lies in bridging classical graphics
+	techniques, such as mesh-based deformation, with modern Gaussian primitives,
+	achieving state-of-the-art geometry reconstruction and rendering quality. Unlike
+	previous avatar rendering approaches, SurFhead enables efficient reconstruction
+	driven by Gaussian primitives while preserving high-fidelity geometry.
         </div>
   </div>
 </section>
